@@ -1,0 +1,36 @@
+При установке CH на один контейнер:
+
+apt update
+apt distupgrade
+apt-get update
+apt-get upgrade
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv E0C56BD4 
+sudo apt-add-repository "deb http://repo.yandex.ru/clickhouse/trusty stable
+main"
+apt-get search apt-add-repository
+apt-cache search apt-add-repository
+apt-get install software-properties-common
+sudo apt-add-repository "deb http://repo.yandex.ru/clickhouse/trusty stable
+main"
+sudo apt-get update
+sudo apt-get install clickhouse-server-common clickhouse-client -y
+sudo apt-get install clickhouse-server-common 
+sudo apt-get install clickhouse-server-base
+apt-get purge -y clickhouse*
+apt-get install -y clickhouse-server-common
+apt-get install -y clickhouse-client
+apt-get install -y clickhouse-server-base
+less /etc/apt/sources.list
+sed -i 's/trusty/xenial/' /etc/apt/sources.list.d/clickhouse.list
+apt-get update
+less /etc/apt/sources.list
+sudo apt-get update
+sudo apt-get install clickhouse-server-common clickhouse-client -y
+sudo service clickhouse-server start
+ps aux
+top
+clickhouse-client
+clickhouse-client --multiline
+clickhouse-client -m
+
+# в статье перепутано trusty/xenial
