@@ -1,0 +1,42 @@
+<yandex>
+    <clickhouse_remote_servers>       <!-- name of substitution-->
+	    <spcluster>
+		<shard>
+		    <weight>1</weight>
+		    <internal_replication>false</internal_replication>
+		    <replica>
+			<host>ch01-01-1</host>
+			<port>9000</port>
+		    </replica>
+		    <replica>
+			<host>ch01-01-2</host>
+			<port>9000</port>
+		    </replica>
+		</shard>
+		<shard>
+		    <weight>1</weight>
+		    <internal_replication>false</internal_replication>
+		    <replica>
+			<host>ch01-02-1</host>
+			<port>9000</port>
+		    </replica>
+		    <replica>
+			<host>ch01-02-2</host>
+			<port>9000</port>
+		    </replica>
+		</shard>
+		<shard>
+		    <weight>1</weight>
+		    <internal_replication>false</internal_replication>
+		    <replica>
+			<host>ch01-03-1</host>
+			<port>9000</port>
+		    </replica>
+		    <replica>
+			<host>ch01-03-2</host>
+			<port>9000</port>
+		    </replica>
+		</shard>
+	    </spcluster>
+    </clickhouse_remote_servers>
+</yandex>
